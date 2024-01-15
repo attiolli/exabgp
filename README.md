@@ -6,6 +6,6 @@ Some notes when using this:
 
 * Also create a "log" directory under the exabgp dir on the host and verify that the "exa" user can write to it.
 
-* After building the docker image, run like this for eg. : ```docker run -e TZ=Europe/Helsinki -d --network host -v /etc/exabgp:/etc/exabgp --name exabgp -it exabgp -v /etc/exabgp/exabgp.conf```
+* After building the docker image, run like this for eg. : ```docker run --restart unless-stopped -e TZ=Europe/Helsinki -d --network host -v /etc/exabgp:/etc/exabgp --name exabgp -it exabgp -v /etc/exabgp/exabgp.conf```
 
 * Tested with Edgerouter ER-X and seems to work as expected
