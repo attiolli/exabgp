@@ -1,4 +1,4 @@
-Exabgp config example that monitors two local service IPs (binded to loopback) and based on reply, announces/withdraws them via BGP. A convenient way to add more resilence to a service that needs to be highly available. Because Exabgp has been coded with python and therefore relays on the libraries of the host system, a containerized installation seems a bit more reliable way to go.
+Exabgp config example that monitors two local service IPs (binded to loopback) and based on reply, announces/withdraws them via BGP. A convenient way to add more resilence for eg. an anycasted DNS service that needs to be highly available. Because Exabgp has been coded with python and therefore relays on the libraries of the host system, a containerized installation seems a bit more reliable way to go.
 
 Some notes when using this:
 
