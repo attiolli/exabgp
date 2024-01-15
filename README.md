@@ -1,6 +1,7 @@
 Exabgp config example that monitors two local service IPs (binded to loopback) and based on reply, announces/withdraws them via BGP. A convenient way to add more resilence for eg. an anycasted DNS service that needs to be highly available. Another usecase would be to help migrating a service between two datacenters. This can be done by building another server with identical service & same loopback ip and starting to announcing the IP with BGP. Then when you want to migrate, just withdraw the route from the first server.
 
-<img width="962" alt="image" src="https://github.com/attiolli/exabgp/assets/5729471/89e5d000-75b4-4fcd-a52e-36c56a59dde3">
+<img width="964" alt="image" src="https://github.com/attiolli/exabgp/assets/5729471/b74a8104-6719-4115-a31a-2f735cbbd4b7">
+
 
 
 Because Exabgp has been coded with python and therefore relays on the libraries of the host system, a containerized installation seems a bit more reliable way to go.
